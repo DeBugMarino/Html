@@ -1,0 +1,96 @@
+body {
+  font-family: Arial;
+  height: 100vh;
+  display: flex;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stili per sidebar */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: #086e04;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+/* Stili per il logo */
+.logo {
+  text-align: center;
+  margin-bottom: 1px;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+/* Stili per i link */
+.links {
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.links li {
+  margin: 10px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.links a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  transition: background 0.3s, transform 0.3s;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Quando si passa sopra con il mouse */
+.links a:hover {
+  background-color: #2b2bb2;
+}
+
+/* Stili info utente */
+.user-info {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid;
+  box-sizing: border-box;
+}
+
+/* Stili Walter */
+.user-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 80%;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+/* Stili per il nome utente */
+.username {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ecf0f1;
+  box-sizing: border-box;
+}
