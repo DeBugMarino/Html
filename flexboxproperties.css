@@ -1,0 +1,69 @@
+body {
+  width: 60em;
+  margin: 0 auto;
+}
+
+section {
+  padding: 2em;
+  margin: 1em;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+/* li centra */
+#yellow ul,
+#red ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*lo stile e ordine del resto*/
+
+#yellow {
+  background-color: #ffff92;
+  order: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#red {
+  background-color: #ff919c;
+  order: 2;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#green {
+  background-color: #8ffda7;
+  order: 3;
+}
+
+#orange {
+  background-color: #ffc788;
+  order: 4;
+  flex-basis: 1000px;
+  flex-grow: 2;
+}
+
+#blue {
+  background-color: #98d2ff;
+  order: 5;
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  display: block;
+  margin: 1em;
+}
