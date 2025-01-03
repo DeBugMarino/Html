@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+      .calculator {
+        width: 320px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      .display {
+        background-color: #333;
+        color: #fff;
+        text-align: right;
+        padding: 15px;
+        font-size: 2rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        padding: 10px;
+        background-color: #e6e6e6;
+      }
+      .grid button {
+        font-size: 1.2rem;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        color: #333;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .grid button:hover {
+        background-color: #dcdcdc;
+      }
+      .operator {
+        background-color: #85c1e9; /* Blu chiaro */
+        color: #fff;
+      }
+      .operator:hover {
+        background-color: #5dade2; /* Blu più scuro al passaggio del mouse */
+      }
+      .equal {
+        background-color: #ff6666 !important; /* Rosso */
+        color: #fff;
+        grid-row: span 4; /* Estende l'uguale su 4 righe */
+      }
+      .equal:hover {
+        background-color: #ff4d4d !important;
+      }
+      .clear {
+        background-color: #ffd1d1;
+      }
+      .clear:hover {
+        background-color: #ffb3b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">0</div>
+      <div class="grid">
+        <button class="operator">+</button>
+        <button class="operator">-</button>
+        <button class="operator">×</button>
+        <button class="operator">÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="equal">=</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button>.</button>
+        <button class="clear">AC</button>
+      </div>
+    </div>
+  </body>
+</html>
